@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel The World</title>
+    <title>Travel The World | Home</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,163 +25,389 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #01d9db">
-          <a class="navbar-brand" href="#"
-            ><img class="logo ms-3" src="./images/logo.png" alt="Logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link fs-5" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="./pages/about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="./pages/contact.html">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle fs-5"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Destinations
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./pages/black-river.html"
-                      >Black River Gorges</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./pages/botanical.html"
-                      >Botanical Garden</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./pages/le-brabant.html"
-                      >Le Morne Brabant</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <header
+        class="d-flex flex-wrap justify-content-center py-3"
+        style="background-color: #3f3191"
+      >
+        <a
+          href="./index.html"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img src="./images/logo.png" class="logo" alt="Logo" />
+          <span class="fs-4 ms-1 text-light">Travel The World</span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Great Outdoors</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">European Cities</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Tropican Islands</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light">Contact</a>
+          </li>
+        </ul>
       </header>
+      <main>
+        <!----- Hero section ------->
 
-      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/hero-1.png" alt="" />
-            <div class="container">
-              <div class="carousel-caption text-start text-dark">
-                <h1>Black River Gorges</h1>
-                <p class="opacity-75">
-                  Black River Gorges National Park is a national park in the
-                  hilly south-western part of Mauritius.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-dark" href="./pages/black-river.html"
-                    >View Page</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/hero-2.png" alt="" />
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Botanical Garden</h1>
-                <p>
-                  The Sir Seewoosagur Ramgoolam Botanic Garden is the oldest
-                  botanical garden in the Southern Hemisphere, famous for its
-                  long pond of giant water lilies.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-dark" href="./pages/botanical.html"
-                    >View Page</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/hero-3.png" alt="" />
-            <div class="container">
-              <div class="carousel-caption text-start text-dark">
-                <h1>Le Morne Brabant</h1>
-                <p>
-                  The island's beautiful Underwater Waterfall lies along the
-                  idyllic shores of Le Morne Brabant on the south west coast of
-                  Mauritius.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-dark" href="./pages/le-brabant.html"
-                    >View Page</a
-                  >
-                </p>
-              </div>
+        <div class="image-container">
+          <img
+            src="./images/main-page-hero.png"
+            class="img-fluid rounded-bottom"
+            alt=""
+          />
+          <div class="hero-text">
+            <h1>Your Adventure Awaits!</h1>
+            <p>
+              Discover the wonders of the world and create unforgettable
+              memories.
+            </p>
+            <div class="d-sm-flex justify-content-sm-center">
+              <a
+                href="./pages/contact.html"
+                type="button"
+                class="btn btn-lg text-light px-4 me-sm-3"
+                style="background-color: #3f3191"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-fire"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"
+                  />
+                </svg>
+                Check Availability
+              </a>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+
+        <!----- About container ------->
+
+        <div class="container px-4 py-5 about-container">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                src="./images/about.png"
+                class="d-block mx-lg-auto img-fluid"
+                alt=""
+                width="700"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold text-body-emphasis text-light mb-3">
+                Explore All Corners of The World With Us
+              </h2>
+              <p class="lead">
+                Embark on a journey beyond imagination with
+                <i><b>Travel The World</b></i
+                >, where every destination is a story waiting to be told and
+                every experience is a brushstroke on the canvas of your
+                memories.
+                <br />
+                From the majestic hiking trails to the serene shores of exotic
+                beaches, we specialize in crafting bespoke adventures tailored
+                to your wildest dreams. Whether you seek the thrill of
+                exploration or the tranquility of relaxation, let
+                <i><b>Travel The World</b></i> be your guide to discovering the
+                wonders of the world.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!------- Our Destinations -------->
+
+        <div class="container px-4 py-5">
+          <h2
+            class="display-6 border-bottom fw-bold text-body-emphasis text-light mb-3 pb-2 pb-5"
+          >
+            Our Destinations
+          </h2>
+          <div class="row py-5 row-cols-1 row-cols-md-3">
+            <div class="col">
+              <a href="./pages/outdoors.html">
+                <img
+                  src="./images/card-1.png"
+                  class="custom-card rounded w-100"
+                  alt="..."
+                />
+              </a>
+              <h5 class="mt-3 text-center">The Great Outdoors</h5>
+            </div>
+            <div class="col">
+              <a href="./pages/cities.html">
+                <img
+                  src="./images/card-2.png"
+                  class="custom-card rounded w-100"
+                  alt="..."
+                />
+              </a>
+              <h5 class="mt-3 text-center">European Cities</h5>
+            </div>
+            <div class="col">
+              <a href="./pages/islands.html">
+                <img
+                  src="./images/card-3.png"
+                  class="custom-card rounded w-100"
+                  alt="..."
+                />
+              </a>
+              <h5 class="mt-3 text-center">Tropical Islands</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Services -->
+
+        <div class="container px-4 py-5" id="hanging-icons">
+          <h2
+            class="display-6 border-bottom fw-bold text-body-emphasis text-light mb-3 pb-2 pb-5"
+          >
+            Our Services
+          </h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div
+                class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+              >
+                <img src="./images/icon-1.png" class="icon rounded" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Tourism</h3>
+                <p>
+                  Dive into vibrant cultures and stunning landscapes with our
+                  expertly guided tourism experiences, tailored to satisfy every
+                  wanderlust craving. We currently offer experiences in the
+                  outdoors, tropical islands and European cities.
+                </p>
+                <a href="./pages/contact.html" class="btn btn-dark">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div
+                class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+              >
+                <img src="./images/icon-2.png" class="icon rounded" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Package Tours</h3>
+                <p>
+                  Let us handle all the details of your adventure with our
+                  meticulously curated package tours, ensuring seamless travel
+                  experiences filled with excitement and wonder. Custom tours
+                  are also offered for groups of family and friends.
+                </p>
+                <a href="./pages/contact.html" class="btn btn-dark">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div
+                class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+              >
+                <img src="./images/icon-3.png" class="icon rounded" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Travel Insurance</h3>
+                <p>
+                  Travel worry-free knowing you're protected against unforeseen
+                  circumstances with our comprehensive travel insurance plans,
+                  offering financial security and peace of mind throughout your
+                  journey.
+                </p>
+                <a href="./pages/contact.html" class="btn btn-dark">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------- Photo Gallery ------->
+
+        <div class="py-5 text-center container">
+          <div class="row py-lg-3">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h2
+                class="display-6 border-bottom fw-bold text-body-emphasis text-light mb-3 pb-2 pb-5"
+              >
+                Traveler's Snapshot
+              </h2>
+
+              <p class="lead text-body-secondary">
+                Welcome to our "Traveler's Snapshot" – a captivating showcase of
+                our clients' adventures captured in vibrant photographs from
+                around the globe.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="album py-1 bg-body-tertiary">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/gallery-1.png" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Newlyweds George and Michelle are enjoying the view in
+                      Bali.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/gallery-8.png" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      William sent us this great outdoors photo from California,
+                      USA.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/gallery-5.png" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Jenny, a solo traveler, is enjoying the view in Lisbon,
+                      Portugal.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/gallery-6.png" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Anthony and his family are on one of our tours of London,
+                      UK.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/gallery-2.png" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Little Timmy sent us this photo of his family holiday to
+                      Mauritius.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/gallery-9.png" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      A perfect family shot, McDonalds sent 5 days on a hike in
+                      Surry, UK.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/gallery-7.png" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Researching the Marine Iguana, Susan is on our university
+                      tour to the Galapagos Islands.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/gallery-4.png" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      The Write sisters with their young boys are sightseeing in
+                      Piombino, Italy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/gallery-3.png" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Celebrating their 30th anniversary, Mr. and Mrs. De Doit
+                      are island hopping in Thailand.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="./pages/outdoors.html"
+              class="nav-link px-2 text-body-secondary"
+              >Great Outdoors</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="./pages/cities.html"
+              class="nav-link px-2 text-body-secondary"
+              >European Cities</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="./pages/islands.html"
+              class="nav-link px-2 text-body-secondary"
+              >Tropical Islands</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="./pages/contact.html"
+              class="nav-link px-2 text-body-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary name">
+          &copy; 2024 Designed by
+          <a
+            href="https://www.linkedin.com/in/jade-h-b623b9242/"
+            target="_blank"
+            >Jade Harris</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>
