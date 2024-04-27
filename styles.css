@@ -4,27 +4,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-/* 
-.color-image {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background: url("./images/caming-tn-1.png");
-  background-size: cover;
-}
-
-.color-image:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("./images/splash.jpg");
-  background-size: 100%;
-  background-position: bottom;
-  mix-blend-mode: screen;
-} */
 
 /* Home page */
 
@@ -32,29 +11,8 @@
   width: 4rem;
 }
 
-.hero-text {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-}
-
-.hero-text h1 {
-  font-size: 2.5rem;
-}
-
-.hero-text p {
-  font-size: 1rem;
-}
-
 .about-container {
   background-color: #fbfbfb;
-}
-
-.intro {
-  background-color: #0b121c;
 }
 
 .custom-card {
@@ -94,30 +52,14 @@
 
 /* Media queries */
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 992px) {
   .home-availability-btn a {
     display: none !important;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .hero-text {
-    top: 50%;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .hero-text h1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 413px) {
   .hero-text p {
-    display: none;
+    display: none !important;
   }
 }
