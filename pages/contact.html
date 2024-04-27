@@ -56,38 +56,63 @@
       </header>
 
       <main>
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">
-              First featurette heading.
-              <span class="text-body-secondary">It’ll blow your mind.</span>
-            </h2>
-            <p class="lead">
-              Some great placeholder content for the first featurette here.
-              Imagine some exciting prose here.
+        <!------- The header section ------->
+
+        <div class="container my-3">
+          <div
+            class="position-relative p-5 text-center text-muted bg-body rounded-5"
+          >
+            <img src="../images/logo-contact.png" alt="" class="img-fluid" />
+            <h1 class="text-body-emphasis">We want to hear from you</h1>
+            <p class="col-lg-6 mx-auto mb-4">
+              We're just one click away from taking your next holiday from great
+              to <i><b>incredible!</b></i> Click the email button now or fill in
+              the form to share more details about your requirments and we will
+              respond to you with ideas and options.
             </p>
+            <a
+              href="mailto:bookings@traveltheworld.com?subject=Inquiry"
+              class="btn btn-secondary px-5 mb-5"
+              type="button"
+            >
+              Email us today!
+            </a>
           </div>
-          <form class="col-md-5">
+        </div>
+
+        <!------- The form section ------->
+
+        <div class="row featurette py-3">
+          <div class="col-md-6">
+            <img
+              src="../images/consultant.png"
+              class="img-fluid consultant rounded-pill py-5"
+              alt="Headshot of a man"
+            />
+            <h2 class="featurette-heading fw-normal lh-1">
+              "Hi, I’m James! Let’s chat about your amazing holiday with friends
+              and family"
+            </h2>
+            <p class="lead">Email me directly: james@traveltheworld.com</p>
+          </div>
+          <form class="col-md-6">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Email address</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
+              <label for="name" class="form-label fs-4">Full Name</label>
+              <input type="name" class="form-control" id="name" />
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Example textarea</label
+              <label for="contact" class="form-label fs-4"
+                >Contact Number</label
               >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
+              <input type="contact" class="form-control" id="name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fs-4">Email address</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label fs-4">Your Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
             </div>
           </form>
         </div>
