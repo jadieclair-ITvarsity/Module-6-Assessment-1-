@@ -26,6 +26,8 @@
   mix-blend-mode: screen;
 } */
 
+/* Home page */
+
 .logo {
   width: 4rem;
 }
@@ -68,16 +70,20 @@
   height: 50px;
 }
 
+/* Content pages */
+
+.special-offer {
+  background: url("./images/specials-bg-1.png");
+  background-size: 100%;
+}
+
+/* Footer */
+
 .name a {
   text-decoration: none;
   color: #1a154a;
   font-size: 18px;
   font-style: italic;
-}
-
-.special-offer {
-  background: url("./images/specials-bg-1.png");
-  background-size: 100%;
 }
 
 /* Contact page */
@@ -98,13 +104,19 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .hero-text {
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
   .hero-text h1 {
     font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 413px) {
   .hero-text p {
     display: none;
   }
